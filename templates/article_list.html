@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Article List{% endblock title %}
+
+{% block content %}
+    <h2>Articles</h2>
+    <ul>
+        {% for article in article_list %}
+        <li> Article Title is {{ article.title }} and Article Primary Key is {{ article.pk }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
