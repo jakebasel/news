@@ -7,6 +7,6 @@
         {% csrf_token %}
         {{ form.as_p }}
         <p>Are you sure you want to delete "{{ article.title }}"?</p>
-        <input type="submit" value="confirm">
+        <input class="btn btn-primary btn-lg news-button" type="submit" value="confirm">
     </form>
 {% endblock content %}
